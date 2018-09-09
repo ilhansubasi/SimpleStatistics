@@ -14,5 +14,14 @@ public class Main {
 
 		int count = new SimpleStatistics().getCount(dataSet);
 		System.out.println("Count: " + count);
+
+		double sum = new SimpleStatistics().getSum(dataSet);
+		System.out.println("Sum: " + sum);
+
+		double mean = new SimpleStatistics().getMean(dataSet);
+		System.out.println("Mean: " + mean);
+
+		double median = new SimpleStatistics().getMedian(dataSet);
+		System.out.println("Median: " + median);
 	}
 }

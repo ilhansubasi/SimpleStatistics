@@ -17,4 +17,28 @@ public final class SimpleStatistics {
 		int count = input.length;
 		return count;
 	}
+
+	public double getSum(double[] input) {
+		double sum = Arrays.stream(input).sum();
+		return sum;
+	}
+
+	public double getMean(double[] input) {
+		double mean = getSum(input) / getCount(input);
+		return mean;
+	}
+
+	public double getMedian(double[] input) {
+		Arrays.sort(input);
+		int count = getCount(input);
+		double median;
+		int medianIndex = (count / 2);
+		if(count % 2 == 1) {
+			median = input[medianIndex];
+		}
+		else {
+			median = (input[medianIndex - 1] + input[medianIndex]) / 2;
+		}
+		return median;
+	}
 }
