@@ -12,4 +12,9 @@ public final class SimpleStatistics {
 	public double getRange(double[] input) {
 		return getMaximum(input) - getMinimum(input);
 	}
+
+	public int getCount(double[] input) {
+		int count = input.length;
+		return count;
+	}
 }

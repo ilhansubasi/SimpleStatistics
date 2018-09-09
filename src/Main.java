@@ -11,5 +11,8 @@ public class Main {
 
 		double range = new SimpleStatistics().getRange(dataSet);
 		System.out.println("Range: " + range);
+
+		int count = new SimpleStatistics().getCount(dataSet);
+		System.out.println("Count: " + count);
 	}
 }
