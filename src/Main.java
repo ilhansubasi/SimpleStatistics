@@ -23,5 +23,8 @@ public class Main {
 
 		double median = new SimpleStatistics().getMedian(dataSet);
 		System.out.println("Median: " + median);
+
+		double populationVariance = new SimpleStatistics().getPopulationVariance(dataSet);
+		System.out.println("Population variance: " + populationVariance);
 	}
 }

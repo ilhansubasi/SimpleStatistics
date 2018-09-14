@@ -41,4 +41,13 @@ public final class SimpleStatistics {
 		}
 		return median;
 	}
+
+	public double getPopulationVariance(double[] input) {
+		double sumOfErrorSquares = 0;
+		for (double observation:input) {
+			sumOfErrorSquares += Math.pow(observation - getMean(input), 2);
+		}
+		double variance = sumOfErrorSquares / getCount(input);
+		return variance;
+	}
 }
