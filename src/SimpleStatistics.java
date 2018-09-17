@@ -50,4 +50,9 @@ public final class SimpleStatistics {
 		double variance = sumOfErrorSquares / getCount(input);
 		return variance;
 	}
+
+	public double getPopulationStandardDeviation(double[] input) {
+		double sqrt = Math.sqrt(getPopulationVariance(input));
+		return sqrt;
+	}
 }
