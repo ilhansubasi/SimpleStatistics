@@ -29,5 +29,11 @@ public class Main {
 
 		double populationStandardDeviation = new SimpleStatistics().getPopulationStandardDeviation(dataSet);
 		System.out.println("Population standard deviation: " + populationStandardDeviation);
+
+		double sampleVariance = new SimpleStatistics().getSampleVariance(dataSet);
+		System.out.println("Sample variance: " + sampleVariance);
+
+		double sampleStandardDeviation = new SimpleStatistics().getSampleStandardDeviation(dataSet);
+		System.out.println("Sample standard deviation: " + sampleStandardDeviation);
 	}
 }
