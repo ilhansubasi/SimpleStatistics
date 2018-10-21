@@ -3,5 +3,5 @@ language: java
 jdk:
   - oraclejdk11
 
-before_install:
-  - cd java
+script:
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
