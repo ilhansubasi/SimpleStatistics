@@ -22,5 +22,8 @@ class SimpleStatisticsTest {
 
 	@org.junit.jupiter.api.Test
 	void getCount() {
+		double dataSet[] = {8.7, 1.01, 2.1, 5.02};
+		double count = new SimpleStatistics().getCount(dataSet);
+		assertEquals(4, count);
 	}
 }
