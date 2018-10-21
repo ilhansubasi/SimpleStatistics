@@ -1,3 +1,5 @@
+package name.ilhan;
+
 import java.util.Arrays;
 
 public final class SimpleStatistics {

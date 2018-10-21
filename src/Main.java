@@ -1,3 +1,5 @@
+import name.ilhan.SimpleStatistics;
+
 public class Main {
 
 	public static void main(String[] args) {
