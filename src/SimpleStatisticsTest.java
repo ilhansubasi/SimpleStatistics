@@ -6,6 +6,9 @@ class SimpleStatisticsTest {
 
 	@org.junit.jupiter.api.Test
 	void getMinimum() {
+		double dataSet[] = {8.7, 1.01, 2.1, 5.02};
+		double minimum = new SimpleStatistics().getMinimum(dataSet);
+		assertEquals(1.01, minimum, 0.0001);
 	}
 
 	@org.junit.jupiter.api.Test
